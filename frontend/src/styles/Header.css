@@ -1,0 +1,72 @@
+.nav-link:hover, .hover-scale:hover  {
+    transform: scale(1.05) !important;
+  }
+  
+  .nav-link,.hover-scale {
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .mobile-menu-container {
+    position: fixed;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1040;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 4rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .menu-open .mobile-menu-container {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .mobile-menu {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: scale(0.95) translateY(-20px);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .menu-open .mobile-menu {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  
+  .mobile-nav-link {
+    color: #2c3e50 !important;
+    font-size: 1.1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+  }
+  
+  .mobile-nav-link:hover {
+    background-color: rgba(var(--bs-primary-rgb), 0.08);
+    transform: translateX(5px);
+  }
+  
+  .close-button {
+    transition: transform 0.2s ease;
+  }
+  
+  .close-button:hover {
+    transform: rotate(90deg);
+  }
+  
+  .btn-outline-primary.py-2 {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem !important;
+  }
+  

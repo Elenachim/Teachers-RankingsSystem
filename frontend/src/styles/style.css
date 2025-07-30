@@ -1,0 +1,135 @@
+/*PROFILE IMAGE*/
+.profile-container {
+  margin-left: 1rem;
+}
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*COLORS*/
+
+:root {
+  --primary: #1e3a8a;
+  --secondary: #1680f9;
+  --light: #f3f4f6;
+  --dark: #1f2937;
+}
+
+/*ICONS*/
+.svg-icon {
+  fill: currentColor;
+  color: var(--light); 
+}
+
+/*IMPORT ALL THE FONTS*/
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+p,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+/*NAVBAR*/
+
+/* Enable dropdown on hover */
+nav {
+  z-index: 999;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Ensures smooth positioning */
+}
+
+/* Optional: Add a smooth transition */
+.dropdown-menu {
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+
+/* SIDEBAR */
+
+.nav-link-custom {
+  position: relative;
+  display: inline-block;
+
+  transition: all 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: #f8f9fa; 
+  transform: scale(1.03); 
+  transition: all 0.3s ease;
+}
+
+.nav-link-custom::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #f8f9fa95;
+  bottom: 0;
+  left: 100%;
+  transition: all 0.3s ease;
+}
+
+.nav-link-custom:hover::before {
+  width: 100%;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+
+
+
