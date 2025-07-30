@@ -3,10 +3,10 @@ require_once __DIR__ . '/../controllers/PositionEmailController.php';
 
 // Test data
 $testData = [
-    'season' => 'φλεβρουάριος',
-    'year' => '2025',
+    'season' => '...',
+    'year' => '...',
     'categoryid' => 1,
-    'fullname' => 'Καραφυλλίδου Χριστιάνα Πανίκος',
+    'fullname' => '...',
     'old_ranking' => 1,
     'new_ranking' => 3
 ];
@@ -14,7 +14,7 @@ $testData = [
 try {
     $controller = new PositionEmailController();
     $result = $controller->NotifyPositionUpdate($testData);
-    
+
     if ($result) {
         echo "Email notification sent successfully!\n";
     } else {
