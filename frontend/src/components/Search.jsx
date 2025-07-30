@@ -39,12 +39,12 @@ const Search = ({ isOpen, onClose }) => {
     const handleResultClick = (result) => {
         onClose();
         navigate(`/rankinglist`, {
-          state: {
-            search: result.fullname,
-            highlight: result.id
-          }
+            state: {
+                search: result.fullname,
+                highlight: result.id
+            }
         });
-      };
+    };
 
     const renderResults = () => {
         if (!searchResults || searchResults.length === 0) return null;
@@ -63,9 +63,9 @@ const Search = ({ isOpen, onClose }) => {
                                     <h5 className="card-title text-truncate">{result.fullname}</h5>
                                     <div className="mb-2">
                                         <span className="badge bg-primary me-2">#{result.ranking}</span>
-                                       
+
                                     </div>
-                               
+
                                     {result.notes && (
                                         <p className="card-text small text-truncate">{result.notes}</p>
                                     )}
