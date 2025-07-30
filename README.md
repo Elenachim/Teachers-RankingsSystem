@@ -1,4 +1,4 @@
-## Εφαρμογή Παρακολούθησης Πινάκων Διοριστέων
+## EEY Candidate Tracking System
 
 ### 📌 Project Overview
 This is a web application that allows users to track appointment lists from the [EEY website](https://eey.gov.cy/pinakes). The system enables searching, monitoring candidates, and extracting useful statistics.
